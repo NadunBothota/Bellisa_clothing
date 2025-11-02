@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BELLISA CLOTHING</title>
+    <link href="https://use.fontawesome.com/releases/v6.5.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt="" style="width: 150px; height: auto;"></a>
+
+        <div>
+            <ul id="navigationBar">
+              <li><a href="index.html">Home</a></li>
+              <li><a class="active" href="shop.html">Shop</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact Us</a></li> 
+              <li id="lg-cart"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li> 
+              <a href="#" id="close"><i class="fas fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/products/f6.jpg" width="100%" id="mainImage" alt="">
+    
+            <div class="small-image-group">
+                <div class="small-image-col">
+                    <img src="img/products/f6.jpg" width="100%" class="small-image" alt="">
+                </div>
+                <div class="small-image-col">
+                    <img src="img/pro06.02.jpg" width="100%" class="small-image" alt="">
+                </div>
+                <div class="small-image-col">
+                    <img src="img/pro06.03.jpg" width="100%" class="small-image" alt="">
+                </div>
+                <div class="small-image-col">
+                    <img src="img/pro06.04.jpg" width="100%" class="small-image" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="single-pro-details">
+            <h4>Bold Elegance Puff Sleeve Dress</h4>
+            <h2>Rs 2550</h2>
+            <select>
+            <option>Select Size</option>
+            <option>Small</option>    
+            <option>Medium</option>
+            <option>Large</option>
+            <option>Extra Large</option>
+            </select>
+            <input type="number" values="1">
+            <button class="normal">Add to Cart</button>
+            <h4>Product Details</h4>
+            <span>The Summer Bloom Floral Maxi Dress is crafted from 100% soft cotton, designed with a sleeveless cut and a flattering V-neckline. Its flowing, tiered skirt adds movement and charm, making it perfect for warm-weather days. Available in vibrant shades like navy blue, coral pink, and crisp white, this dress is ideal for casual outings or garden parties. It’s easy to care for, requiring a cold machine wash and low tumble dry.</span>
+        </div>
+    </section>
+    
+    <section id="emailsignup" class="section-p1 section-m1">
+        <div class="signup">
+            <h4>Sign Up For Latest Updates</h4>
+            <p>Get the latest updates and <span>special offers</span> from Bellisa clothing</p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+ 
+  <div class="col">
+    <img class="logo" src="img/logo.png" alt="" style="width: 200px; height: auto; margin-bottom: 20px;">
+    <h4>Contact</h4>
+    <p><strong>Address:</strong> current address</p>
+    <p><strong>Phone:</strong> Phone Number</p>
+    <p style="margin-bottom: 20px;"><strong>Hours:</strong> Any time</p>
+    <div class="follow">
+      <h4>Follow Us</h4>
+      <div class="icon">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-tiktok"></i>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col">
+    <h4>About</h4>
+    <a href="#">About Us</a>
+    <a href="#">Delivery Information</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms & Conditions</a>
+    <a href="#">Contact Us</a>
+  </div>
+
+  
+  <div class="col">
+    <h4>My Account</h4>
+    <a href="#">Sign In</a>
+    <a href="#">View Cart</a>
+    <a href="#">Track My Order</a>
+    <a href="#">Help</a>
+  </div>
+    </footer>
+
+    <script>
+        var mainImage = document.getElementById("mainImage");
+        var smallimage = document.getElementsByClassName("small-image")
+
+        smallimage[0].onclick = function(){
+            mainImage.src = smallimage[0].src;
+        }
+        smallimage[1].onclick = function(){
+            mainImage.src = smallimage[1].src;
+        }
+        smallimage[2].onclick = function(){
+            mainImage.src = smallimage[2].src;
+        }
+        smallimage[3].onclick = function(){
+            mainImage.src = smallimage[3].src;
+        }
+    </script>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
